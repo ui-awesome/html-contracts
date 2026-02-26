@@ -13,4 +13,4 @@ namespace UIAwesome\Html\Contracts;
  * @copyright Copyright (C) 2026 Terabytesoftw.
  * @license https://opensource.org/license/bsd-3-clause BSD 3-Clause License.
  */
-interface FormControlInterface extends RenderableInterface, HasAttributesInterface {}
+interface FormControlInterface extends RenderableInterface, AttributesInterface {}

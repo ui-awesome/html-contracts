@@ -9,7 +9,7 @@
         "interfaces",
         "php"
     ],
-    "license": "mit",
+    "license": "BSD-3-Clause",
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
