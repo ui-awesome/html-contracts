@@ -6,9 +6,7 @@ Tool references:
 
 - [Composer Require Checker](https://github.com/maglnet/ComposerRequireChecker) for dependency definition checks.
 - [Easy Coding Standard (ECS)](https://github.com/easy-coding-standard/easy-coding-standard) for coding standards.
-- [Infection](https://infection.github.io/) for mutation testing.
 - [PHPStan](https://phpstan.org/) for static analysis.
-- [PHPUnit](https://phpunit.de/) for unit tests.
 - [Rector](https://github.com/rectorphp/rector) for automated refactoring.
 
 ## Automated refactoring (Rector)
@@ -35,20 +33,6 @@ Verify that runtime dependencies are correctly declared in `composer.json`.
 composer check-dependencies
 ```
 
-## Mutation testing (Infection)
-
-Run mutation testing.
-
-```bash
-composer mutation
-```
-
-Run mutation testing with static analysis enabled.
-
-```bash
-composer mutation-static
-```
-
 ## Static analysis (PHPStan)
 
 Run static analysis.
@@ -57,26 +41,12 @@ Run static analysis.
 composer static
 ```
 
-## Unit tests (PHPUnit)
-
-Run the full test suite.
-
-```bash
-composer tests
-```
-
 ## Passing extra arguments
 
 Composer scripts support forwarding additional arguments using `--`.
 
-Run PHPUnit with code coverage report generation.
+Run ECS with a different memory limit.
 
 ```bash
-composer tests -- --coverage-html code_coverage
-```
-
-Run PHPStan with a different memory limit.
-
-```bash
-composer static -- --memory-limit=512M
+composer ecs -- --memory-limit=512M
 ```
