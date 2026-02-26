@@ -15,15 +15,13 @@ composer sync-metadata
 
 This command updates the following configuration files:
 
-| File               | Purpose                                      |
-| ------------------ | -------------------------------------------- |
-| `.editorconfig`    | Editor settings and code style configuration |
-| `.gitattributes`   | Git attributes and file handling rules       |
-| `.gitignore`       | Git ignore patterns and exclusions           |
-| `.styleci.yml`     | StyleCI code style analysis configuration    |
-| `infection.json5`  | Infection mutation testing configuration     |
-| `phpstan.neon`     | PHPStan static analysis configuration        |
-| `phpunit.xml.dist` | PHPUnit test configuration                   |
+| File             | Purpose                                      |
+| ---------------- | -------------------------------------------- |
+| `.editorconfig`  | Editor settings and code style configuration |
+| `.gitattributes` | Git attributes and file handling rules       |
+| `.gitignore`     | Git ignore patterns and exclusions           |
+| `.styleci.yml`   | StyleCI code style analysis configuration    |
+| `phpstan.neon`   | PHPStan static analysis configuration        |
 
 ### When to Run
 
