@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace UIAwesome\Html\Contracts;
+namespace UIAwesome\Html\Contracts\Attribute;
 
 use Stringable;
 use UnitEnum;
