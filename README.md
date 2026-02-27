@@ -64,7 +64,7 @@ elements (inputs, selects, textareas, etc.) that need both rendering and attribu
 
 declare(strict_types=1);
 
-use UIAwesome\Html\Contracts\FormControlInterface;
+use UIAwesome\Html\Contracts\Form\FormControlInterface;
 
 function renderField(FormControlInterface $control): string
 {

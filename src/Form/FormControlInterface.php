@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
-namespace UIAwesome\Html\Contracts;
+namespace UIAwesome\Html\Contracts\Form;
+
+use UIAwesome\Html\Contracts\Attribute\AttributesInterface;
+use UIAwesome\Html\Contracts\RenderableInterface;
 
 /**
  * Defines the contract for form control elements (inputs, selects, textareas, etc.).
