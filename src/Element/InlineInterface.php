@@ -4,11 +4,10 @@ declare(strict_types=1);
 
 namespace UIAwesome\Html\Contracts\Element;
 
-use BackedEnum;
 use UIAwesome\Html\Contracts\RenderableInterface;
 
 /**
- * Defines a contract for HTML tag enums backed by {@see BackedEnum} that render as single-line elements.
+ * Defines a contract for renderable HTML elements that render as single-line elements.
  *
  * In this library, "Inline" refers to elements rendered on the same line, not HTML's standard inline-level content
  * categories.
@@ -18,7 +17,7 @@ use UIAwesome\Html\Contracts\RenderableInterface;
  * @copyright Copyright (C) 2026 Terabytesoftw.
  * @license https://opensource.org/license/bsd-3-clause BSD 3-Clause License.
  */
-interface InlineInterface extends BackedEnum, RenderableInterface
+interface InlineInterface extends RenderableInterface
 {
     /**
      * Appends encoded content.
