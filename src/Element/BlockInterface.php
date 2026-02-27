@@ -4,13 +4,12 @@ declare(strict_types=1);
 
 namespace UIAwesome\Html\Contracts\Element;
 
-use BackedEnum;
 use LogicException;
 use RuntimeException;
 use UIAwesome\Html\Contracts\RenderableInterface;
 
 /**
- * Defines a contract for HTML tag enums backed by {@see BackedEnum} that use separate opening and closing tags.
+ * Defines a contract for renderable HTML elements that use separate opening and closing tags.
  *
  * In this library, "Block" refers to elements rendered with {@see begin()} and {@see end()} methods, not HTML's
  * standard block-level content categories.
@@ -20,7 +19,7 @@ use UIAwesome\Html\Contracts\RenderableInterface;
  * @copyright Copyright (C) 2026 Terabytesoftw.
  * @license https://opensource.org/license/bsd-3-clause BSD 3-Clause License.
  */
-interface BlockInterface extends BackedEnum, RenderableInterface
+interface BlockInterface extends RenderableInterface
 {
     /**
      * Starts begin/end rendering for this instance.
