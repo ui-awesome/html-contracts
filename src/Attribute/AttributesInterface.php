@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace UIAwesome\Html\Contracts\Attribute;
 
+use Stringable;
 use UnitEnum;
 
 /**
@@ -34,6 +35,16 @@ interface AttributesInterface
      * @return static New instance with the replaced attributes.
      */
     public function attributes(array $values): static;
+
+    /**
+     * Sets the `class` attribute.
+     *
+     * @param string|Stringable|UnitEnum|null $value CSS class value, or `null` to remove the attribute.
+     * @param bool $override Whether to override existing classes (`true`) or merge (`false`).
+     *
+     * @return static New instance with the updated `class` attribute.
+     */
+    public function class(string|Stringable|UnitEnum|null $value, bool $override = false): static;
 
     /**
      * Returns the value of a single HTML attribute.
