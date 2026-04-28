@@ -1,8 +1,13 @@
 # Changelog
 
+All notable changes to this project will be documented in this file.
+
+The format is based on Keep a Changelog, and this project adheres to Semantic Versioning.
+
 ## 0.1.0 Under development
 
-- Enh #1: Add `AttributesInterface`, `FormControlInterface` and `RenderableInterface` combining rendering and attribute management for form controls (@terabytesoftw)
-- Enh #2: Introduce `BlockInterface`, `InlineInterface`, and `VoidInterface` interfaces, and refactor `AttributesInterface` and `FormControlInterface` into nested namespaces for enhanced HTML element management (@terabytesoftw)
-- Chg #3: Decouple `BlockInterface`, `InlineInterface`, and `VoidInterface` from `BackedEnum` so class-based renderable elements can implement these contracts (@terabytesoftw)
-- Chg #4: Simplify `AttributesInterface` to the public attributes API with `attributes()` replacement and `addAttribute()` single-attribute updates (@terabytesoftw)
+- feat: add `AttributesInterface`, `FormControlInterface`, and `RenderableInterface` to combine rendering and attribute management for form controls.
+- feat: introduce `BlockInterface`, `InlineInterface`, and `VoidInterface`, and move `AttributesInterface` and `FormControlInterface` into nested namespaces for HTML element management.
+- refactor: decouple `BlockInterface`, `InlineInterface`, and `VoidInterface` from `BackedEnum` so class-based renderable elements can implement these contracts.
+- refactor: simplify `AttributesInterface` to the public attributes API with `attributes()` replacement and `addAttribute()` single-attribute updates.
+- chore: update `README.md` branding and align tooling config for PHP `8.3` and phpstan strict rules.
