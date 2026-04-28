@@ -1,12 +1,18 @@
 {
     "name": "ui-awesome/html-contracts",
     "type": "library",
-    "description": "Contracts (interfaces) for the UI Awesome HTML ecosystem for PHP.",
+    "description": "Shared interfaces for the UI Awesome HTML ecosystem: rendering, attribute management, element typing, and form controls.",
     "keywords": [
         "ui-awesome",
         "html",
-        "contracts",
+        "html-contracts",
         "interfaces",
+        "renderable",
+        "attributes",
+        "form-control",
+        "block-element",
+        "inline-element",
+        "void-element",
         "php"
     ],
     "license": "BSD-3-Clause",

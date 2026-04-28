@@ -11,3 +11,4 @@ The format is based on Keep a Changelog, and this project adheres to Semantic Ve
 - refactor: decouple `BlockInterface`, `InlineInterface`, and `VoidInterface` from `BackedEnum` so class-based renderable elements can implement these contracts.
 - refactor: simplify `AttributesInterface` to the public attributes API with `attributes()` replacement and `addAttribute()` single-attribute updates.
 - chore: update `README.md` branding and align tooling config for PHP `8.3` and phpstan strict rules.
+- chore: refine `composer.json` description and keywords to reflect the published interfaces (renderable, attributes, form control, block, inline, void).
