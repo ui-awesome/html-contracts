@@ -6,6 +6,8 @@ The format is based on Keep a Changelog, and this project adheres to Semantic Ve
 
 ## 0.1.1 Under development
 
+- chore: update workflow dependencies to use version `v1` for consistency.
+
 ## 0.1.0 April 28, 2026
 
 - feat: add `AttributesInterface`, `FormControlInterface`, and `RenderableInterface` to combine rendering and attribute management for form controls.
