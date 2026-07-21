@@ -15,9 +15,6 @@ use UIAwesome\Html\Contracts\RenderableInterface;
  * standard block-level content categories.
  *
  * @see https://developer.mozilla.org/en-US/docs/Glossary/Block-level_content
- *
- * @copyright Copyright (C) 2026 Terabytesoftw.
- * @license https://opensource.org/license/bsd-3-clause BSD 3-Clause License.
  */
 interface BlockInterface extends RenderableInterface
 {

@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - chore: update workflow dependencies to use version `v1` for consistency.
 - chore: migrate to `yii2-extensions/scaffold` consumer model with `php-forge/baseline` and `php-forge/coding-standard`.
+- chore: remove redundant copyright and license annotations from source interfaces and add Composer author metadata.
 
 ## 0.1.0 April 28, 2026
 

@@ -11,9 +11,6 @@ use UnitEnum;
  * Defines the public contract for objects that manage HTML attributes.
  *
  * Provides an immutable API for replacing, adding, reading, and removing HTML attributes on elements.
- *
- * @copyright Copyright (C) 2026 Terabytesoftw.
- * @license https://opensource.org/license/bsd-3-clause BSD 3-Clause License.
  */
 interface AttributesInterface
 {
