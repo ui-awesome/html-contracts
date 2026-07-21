@@ -12,7 +12,7 @@ use UIAwesome\Html\Contracts\RenderableInterface;
  * In this library, "Inline" refers to elements rendered on the same line, not HTML's standard inline-level content
  * categories.
  *
- * @link https://developer.mozilla.org/en-US/docs/Glossary/Inline-level_content
+ * @see https://developer.mozilla.org/en-US/docs/Glossary/Inline-level_content
  *
  * @copyright Copyright (C) 2026 Terabytesoftw.
  * @license https://opensource.org/license/bsd-3-clause BSD 3-Clause License.
