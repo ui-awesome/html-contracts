@@ -1,12 +1,21 @@
 <!-- markdownlint-disable MD041 -->
 <p align="center">
-    <picture>
+    <a href="https://github.com/ui-awesome/html-contracts" target="_blank">
         <img src="https://raw.githubusercontent.com/ui-awesome/.github/refs/heads/main/logo/ui_awesome.png" alt="UI Awesome" width="25%">
-    </picture>
-    <h1 align="center">Html helper</h1>
+    </a>
+    <h1 align="center">HTML Contracts for PHP</h1>
     <br>
 </p>
 <!-- markdownlint-enable MD041 -->
+
+<p align="center">
+    <a href="https://github.com/ui-awesome/html-contracts/actions/workflows/static.yml" target="_blank">
+        <img src="https://img.shields.io/github/actions/workflow/status/ui-awesome/html-contracts/static.yml?style=for-the-badge&label=PHPStan&logo=github" alt="PHPStan">
+    </a>
+    <a href="https://github.com/ui-awesome/html-contracts/actions/workflows/security.yml" target="_blank">
+        <img src="https://img.shields.io/github/actions/workflow/status/ui-awesome/html-contracts/security.yml?style=for-the-badge&label=Security&logo=github" alt="Security">
+    </a>
+</p>
 
 <p align="center">
     <strong>Contracts (interfaces) for the UI Awesome HTML ecosystem for PHP</strong><br>
@@ -82,16 +91,16 @@ For detailed configuration options and advanced usage.
 [![Latest Stable Version](https://img.shields.io/packagist/v/ui-awesome/html-contracts.svg?style=for-the-badge&logo=packagist&logoColor=white&label=Stable)](https://packagist.org/packages/ui-awesome/html-contracts)
 [![Total Downloads](https://img.shields.io/packagist/dt/ui-awesome/html-contracts.svg?style=for-the-badge&logo=composer&logoColor=white&label=Downloads)](https://packagist.org/packages/ui-awesome/html-contracts)
 
-## Quality code
+## Project status
 
-[![PHPStan](https://img.shields.io/github/actions/workflow/status/ui-awesome/html-contracts/static.yml?style=for-the-badge&label=PHPStan&logo=github)](https://github.com/ui-awesome/html-contracts/actions/workflows/static.yml)
 [![PHPStan Level Max](https://img.shields.io/badge/PHPStan-Level%20Max-4F5D95.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ui-awesome/html-contracts/actions/workflows/static.yml)
-[![Super-Linter](https://img.shields.io/github/actions/workflow/status/ui-awesome/html-contracts/linter.yml?style=for-the-badge&label=Super-Linter&logo=github)](https://github.com/ui-awesome/html-contracts/actions/workflows/linter.yml)
+[![Quality](https://img.shields.io/github/actions/workflow/status/ui-awesome/html-contracts/quality.yml?style=for-the-badge&label=Quality&logo=github)](https://github.com/ui-awesome/html-contracts/actions/workflows/quality.yml)
 [![StyleCI](https://img.shields.io/badge/StyleCI-Passed-44CC11.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.styleci.io/repos/ui-awesome/html-contracts?branch=main)
 
 ## Our social networks
 
 [![Follow on X](https://img.shields.io/badge/-Follow%20on%20X-1DA1F2.svg?style=for-the-badge&logo=x&logoColor=white&labelColor=000000)](https://x.com/Terabytesoftw)
+[![Follow on Facebook](https://img.shields.io/badge/-Follow%20on%20Facebook-1877F2.svg?style=for-the-badge&logo=facebook&logoColor=white&labelColor=000000)](https://www.facebook.com/wilmer.arambula.9)
 
 ## License
 

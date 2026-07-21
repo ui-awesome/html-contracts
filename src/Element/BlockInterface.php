@@ -14,7 +14,7 @@ use UIAwesome\Html\Contracts\RenderableInterface;
  * In this library, "Block" refers to elements rendered with {@see begin()} and {@see end()} methods, not HTML's
  * standard block-level content categories.
  *
- * @link https://developer.mozilla.org/en-US/docs/Glossary/Block-level_content
+ * @see https://developer.mozilla.org/en-US/docs/Glossary/Block-level_content
  *
  * @copyright Copyright (C) 2026 Terabytesoftw.
  * @license https://opensource.org/license/bsd-3-clause BSD 3-Clause License.
