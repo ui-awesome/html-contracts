@@ -13,8 +13,5 @@ use UIAwesome\Html\Contracts\RenderableInterface;
  * standard void element categories.
  *
  * @see https://developer.mozilla.org/en-US/docs/Glossary/Void_element
- *
- * @copyright Copyright (C) 2026 Terabytesoftw.
- * @license https://opensource.org/license/bsd-3-clause BSD 3-Clause License.
  */
 interface VoidInterface extends RenderableInterface {}
