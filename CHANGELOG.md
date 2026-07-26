@@ -5,7 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## 0.1.2 Under development
+## 0.2.0 Under development
+
+- feat: add `SrcInterface` and `ValueInterface` to the `Attribute` namespace for elements exposing the `src` and `value` attributes.
+- feat: add `ContentInterface` to the `Element` namespace for elements accepting encoded and raw HTML child content.
+- feat: add `PlaceholderInterface` and `CheckedStateInterface` to the `Form` namespace for controls exposing the `placeholder` and `checked` attributes.
+- feat: add `ChoiceListInterface` to the `Form` namespace to identify choice-list controls and expose `enclosedByLabel()`.
+- feat: add `MultiValueInterface` to the `Form` namespace for controls accepting one or many selected values.
+- refactor!: extend `InlineInterface` from `ContentInterface` and remove its own `content()`, `getContent()`, and `html()` declarations; implementers must widen the variadic parameter to `string|Stringable`, previously `string|RenderableInterface`.
 
 ## 0.1.1 July 21, 2026
 
