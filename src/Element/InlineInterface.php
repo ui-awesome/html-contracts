@@ -12,47 +12,8 @@ use UIAwesome\Html\Contracts\RenderableInterface;
  * In this library, "Inline" refers to elements rendered on the same line, not HTML's standard inline-level content
  * categories.
  *
+ * Combines rendering capability with the child content API inherited from {@see ContentInterface}.
+ *
  * @see https://developer.mozilla.org/en-US/docs/Glossary/Inline-level_content
  */
-interface InlineInterface extends RenderableInterface
-{
-    /**
-     * Appends encoded content.
-     *
-     * Usage example:
-     * ```php
-     * $someTag->content('Hello, <World>!');
-     * ```
-     *
-     * @param string|RenderableInterface ...$values Content to be encoded and appended.
-     *
-     * @return static New instance with appended encoded content.
-     */
-    public function content(string|RenderableInterface ...$values): static;
-
-    /**
-     * Returns the content assigned to the element.
-     *
-     * Usage example:
-     * ```php
-     * $someTag->getContent();
-     * ```
-     *
-     * @return string Content value assigned to the element. Never `null`.
-     */
-    public function getContent(): string;
-
-    /**
-     * Appends raw HTML content.
-     *
-     * Usage example:
-     * ```php
-     * $someTag->html('<strong>Hello, World!</strong>');
-     * ```
-     *
-     * @param string|RenderableInterface ...$values Raw HTML content to be appended.
-     *
-     * @return static New instance with appended raw HTML content.
-     */
-    public function html(string|RenderableInterface ...$values): static;
-}
+interface InlineInterface extends ContentInterface, RenderableInterface {}
