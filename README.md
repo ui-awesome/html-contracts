@@ -25,7 +25,7 @@
 ### Installation
 
 ```bash
-composer require ui-awesome/html-contracts:^0.3
+composer require ui-awesome/html-contracts:^0.2
 ```
 
 ### Interfaces
