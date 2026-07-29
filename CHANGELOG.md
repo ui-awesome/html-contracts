@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 0.2.1 Under development
 
-## 0.2.0 July 31, 2026
+## 0.2.0 July 29, 2026
 
 - feat: add `SrcInterface` and `ValueInterface` to the `Attribute` namespace for elements exposing the `src` and `value` attributes.
 - feat: add `ContentInterface` to the `Element` namespace for elements accepting encoded and raw HTML child content.
