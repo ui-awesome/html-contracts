@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 0.2.1 Under development
 
+- docs: correct the documented attribute method names and bulk-update semantics.
+
 ## 0.2.0 July 29, 2026
 
 - feat: add `SrcInterface` and `ValueInterface` to the `Attribute` namespace for elements exposing the `src` and `value` attributes.
