@@ -59,7 +59,7 @@ final class MyTag implements RenderableInterface
 
 Contract for objects that manage HTML attributes with an immutable API.
 
-Methods: `attributes()`, `class()`, `getAttribute()`, `getAttributes()`, `removeAttribute()`, `setAttribute()`.
+Methods: `addAttribute()`, `attributes()`, `class()`, `getAttribute()`, `getAttributes()`, and `removeAttribute()`.
 
 #### FormControlInterface
 

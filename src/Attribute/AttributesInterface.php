@@ -25,11 +25,11 @@ interface AttributesInterface
     public function addAttribute(string|UnitEnum $key, mixed $value): static;
 
     /**
-     * Replaces all HTML attributes for the element.
+     * Adds or updates multiple HTML attributes for the element.
      *
      * @param mixed[] $values Associative array of attribute keys and values.
      *
-     * @return static New instance with the replaced attributes.
+     * @return static New instance with the updated attributes.
      */
     public function attributes(array $values): static;
 
