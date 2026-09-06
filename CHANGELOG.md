@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## 0.2.1 Under development
 
 - docs: correct the documented attribute method names and bulk-update semantics.
+- feat: expand `ContentInterface::content()` to accept `UnitEnum`; document implementation-signature compatibility.
 
 ## 0.2.0 July 29, 2026
 
