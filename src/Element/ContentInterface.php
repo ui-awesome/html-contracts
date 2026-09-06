@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace UIAwesome\Html\Contracts\Element;
 
 use Stringable;
+use UnitEnum;
 
 /**
  * Defines the contract for elements that accept child content.
@@ -17,24 +18,16 @@ interface ContentInterface
     /**
      * Appends encoded content.
      *
-     * Usage example:
-     * ```php
-     * $someTag->content('Hello, <World>!');
-     * ```
+     * Backed enums use their value (including `0`); pure enums use their name. Values are normalized before encoding.
      *
-     * @param string|Stringable ...$values Content to be encoded and appended.
+     * @param string|Stringable|UnitEnum ...$values Content to be encoded and appended.
      *
      * @return static New instance with appended encoded content.
      */
-    public function content(string|Stringable ...$values): static;
+    public function content(string|Stringable|UnitEnum ...$values): static;
 
     /**
      * Returns the content assigned to the element.
-     *
-     * Usage example:
-     * ```php
-     * $someTag->getContent();
-     * ```
      *
      * @return string Content value assigned to the element. Never `null`.
      */
@@ -42,11 +35,6 @@ interface ContentInterface
 
     /**
      * Appends raw HTML content.
-     *
-     * Usage example:
-     * ```php
-     * $someTag->html('<strong>Hello, World!</strong>');
-     * ```
      *
      * @param string|Stringable ...$values Raw HTML content to be appended.
      *

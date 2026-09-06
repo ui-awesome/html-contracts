@@ -61,6 +61,15 @@ Contract for objects that manage HTML attributes with an immutable API.
 
 Methods: `addAttribute()`, `attributes()`, `class()`, `getAttribute()`, `getAttributes()`, and `removeAttribute()`.
 
+#### ContentInterface
+
+Contract for immutable encoded element content. `content(string|Stringable|UnitEnum ...$values)` normalizes enum
+values before HTML encoding; `getContent()` returns accumulated content, and `html(string|Stringable ...$values)`
+appends trusted raw HTML. Backed enums use their value (including integer zero); pure enums use their name.
+
+Existing callers remain compatible. Implementations and overrides retaining the old narrower signature must be
+updated; see the [upgrade guide](UPGRADE.md) for details and coordinated Composer requirements.
+
 #### FormControlInterface
 
 Composed interface extending both `RenderableInterface` and `AttributesInterface`. Use this to type form control
