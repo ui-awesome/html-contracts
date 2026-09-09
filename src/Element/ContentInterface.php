@@ -34,11 +34,13 @@ interface ContentInterface
     public function getContent(): string;
 
     /**
-     * Appends raw HTML content.
+     * Appends trusted raw HTML content without encoding or sanitizing it.
      *
-     * @param string|Stringable ...$values Raw HTML content to be appended.
+     * Backed enums use their value (including `0`); pure enums use their name.
+     *
+     * @param string|Stringable|UnitEnum ...$values Trusted raw HTML content to be appended.
      *
      * @return static New instance with appended raw HTML content.
      */
-    public function html(string|Stringable ...$values): static;
+    public function html(string|Stringable|UnitEnum ...$values): static;
 }
