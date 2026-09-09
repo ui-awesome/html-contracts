@@ -5,11 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## 0.2.2 Under development
+## 0.2.2 September 09, 2026
 
 - feat!: expand `ContentInterface::html()` to accept `UnitEnum`; implementations must accept the widened signature.
 
-## 0.2.1 September 6, 2026
+## 0.2.1 September 06, 2026
 
 - docs: correct the documented attribute method names and bulk-update semantics.
 - feat: expand `ContentInterface::content()` to accept `UnitEnum`; document implementation-signature compatibility.
