@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 0.2.2 Under development
 
+- feat!: expand `ContentInterface::html()` to accept `UnitEnum`; implementations must accept the widened signature.
+
 ## 0.2.1 September 6, 2026
 
 - docs: correct the documented attribute method names and bulk-update semantics.
