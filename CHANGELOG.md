@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 0.2.3 Under development
 
+- chore: remove obsolete scaffold tooling and align package maintenance checks with PHP Forge conventions.
+
 ## 0.2.2 September 09, 2026
 
 - feat!: expand `ContentInterface::html()` to accept `UnitEnum`; implementations must accept the widened signature.

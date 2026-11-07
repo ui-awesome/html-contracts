@@ -31,12 +31,10 @@
     },
     "require-dev": {
         "maglnet/composer-require-checker": "^4.1",
-        "php-forge/baseline": "^0.2",
         "php-forge/coding-standard": "^0.3",
         "phpstan/extension-installer": "^1.4",
         "phpstan/phpstan": "^2.2",
-        "phpstan/phpstan-strict-rules": "^2.0",
-        "yii2-extensions/scaffold": "^0.2"
+        "phpstan/phpstan-strict-rules": "^2.0"
     },
     "autoload": {
         "psr-4": {
@@ -46,25 +44,58 @@
     "extra": {
         "branch-alias": {
             "dev-main": "0.3.x-dev"
-        },
-        "scaffold": {
-            "allowed-packages": [
-                "php-forge/baseline",
-                "php-forge/coding-standard"
-            ]
         }
     },
     "config": {
         "sort-packages": true,
         "allow-plugins": {
-            "phpstan/extension-installer": true,
-            "yii2-extensions/scaffold": true
+            "phpstan/extension-installer": true
         }
     },
     "scripts": {
-        "check-dependencies": "./vendor/bin/composer-require-checker check",
-        "ecs": "./vendor/bin/ecs --fix",
-        "rector": "./vendor/bin/rector process",
-        "static": "./vendor/bin/phpstan --memory-limit=-1"
+        "actionlint": "actionlint",
+        "check-dependencies": "composer-require-checker check",
+        "codespell": "codespell --config .github/linters/.codespellrc",
+        "ecs": "ecs check --fix",
+        "ecs-check": "ecs check --ansi",
+        "editorconfig-checker": "editorconfig-checker -config .github/linters/.editorconfig-checker.json",
+        "gitleaks": "gitleaks git --config .github/linters/.gitleaks.toml --redact",
+        "markdownlint": "markdownlint-cli2 --config .github/linters/.markdown-lint.yml '**/*.md'",
+        "prettier": "prettier --check '**/*.md' '**/*.{yml,yaml}'",
+        "quality": [
+            "@actionlint",
+            "@codespell",
+            "@editorconfig-checker",
+            "@markdownlint",
+            "@prettier",
+            "@yamllint"
+        ],
+        "rector": "rector process",
+        "rector-check": "rector process --dry-run",
+        "security": [
+            "@zizmor",
+            "@gitleaks"
+        ],
+        "static": "phpstan --memory-limit=-1",
+        "yamllint": "yamllint -c .github/linters/.yamllint.yml .github",
+        "zizmor": "zizmor --persona=pedantic .github"
+    },
+    "scripts-descriptions": {
+        "actionlint": "Lints GitHub Actions workflows with actionlint.",
+        "check-dependencies": "Verifies that used symbols are declared as Composer dependencies.",
+        "codespell": "Checks spelling with codespell.",
+        "ecs": "Applies coding standard fixes with ECS.",
+        "ecs-check": "Checks coding standards with ECS without modifying files.",
+        "editorconfig-checker": "Checks files against the EditorConfig rules.",
+        "gitleaks": "Scans Git history for secrets with Gitleaks.",
+        "markdownlint": "Lints Markdown files with markdownlint-cli2.",
+        "prettier": "Checks Markdown and YAML formatting with Prettier defaults.",
+        "quality": "Runs all repository quality checks.",
+        "rector": "Applies automated refactoring with Rector.",
+        "rector-check": "Previews Rector refactoring without modifying files.",
+        "security": "Runs the workflow security and secret scanning checks.",
+        "static": "Runs static analysis with PHPStan.",
+        "yamllint": "Lints YAML files with yamllint.",
+        "zizmor": "Audits GitHub Actions workflows with zizmor."
     }
 }
