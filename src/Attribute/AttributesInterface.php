@@ -10,7 +10,7 @@ use UnitEnum;
 /**
  * Defines the public contract for objects that manage HTML attributes.
  *
- * Provides an immutable API for replacing, adding, reading, and removing HTML attributes on elements.
+ * Provides an immutable API for adding, updating, reading, and removing HTML attributes on elements.
  */
 interface AttributesInterface
 {
@@ -25,11 +25,11 @@ interface AttributesInterface
     public function addAttribute(string|UnitEnum $key, mixed $value): static;
 
     /**
-     * Replaces all HTML attributes for the element.
+     * Adds or updates the supplied HTML attributes, preserving all other attributes.
      *
      * @param mixed[] $values Associative array of attribute keys and values.
      *
-     * @return static New instance with the replaced attributes.
+     * @return static New instance with the updated attributes.
      */
     public function attributes(array $values): static;
 
