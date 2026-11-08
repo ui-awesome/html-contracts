@@ -21,24 +21,15 @@ interface BlockInterface extends RenderableInterface
     /**
      * Starts begin/end rendering for this instance.
      *
-     * Usage example:
-     * ```php
-     * <?= SomeTag::tag()->begin() ?>
-     * Content inside the tag.
-     * <?= SomeTag::end() ?>
-     * ```
+     * Returns the opening markup to the caller, who emits content between `begin()` and `end()`.
+     * The `pre` and `textarea` begin/end pair adds no automatic newlines.
      *
-     * @return string Empty string for output buffering compatibility.
+     * @return string Opening HTML markup for the element.
      */
     public function begin(): string;
 
     /**
      * Ends the most recent begin/end rendering block for the current class.
-     *
-     * Usage example:
-     * ```php
-     * <?= SomeTag::end() ?>
-     * ```
      *
      * @throws LogicException if no matching `begin()` call is found.
      * @throws RuntimeException if the tag class does not match the expected type.
