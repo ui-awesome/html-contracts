@@ -22,7 +22,7 @@ interface BlockInterface extends RenderableInterface
      * Starts begin/end rendering for this instance.
      *
      * Returns the opening markup to the caller, who emits content between `begin()` and `end()`.
-     * The `pre` and `textarea` begin/end pair adds no automatic newlines.
+     * Whitespace around streamed content is implementation-specific.
      *
      * @return string Opening HTML markup for the element.
      */
