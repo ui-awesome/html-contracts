@@ -70,6 +70,12 @@ normalizes enum values and appends trusted raw HTML without encoding or sanitizi
 Existing callers remain compatible. Implementations and overrides retaining the old narrower signature must be
 updated; see the [upgrade guide](UPGRADE.md) for details and coordinated Composer requirements.
 
+#### ClearableContentInterface
+
+Optional capability extending `ContentInterface`. `clearContent()` returns a new instance with empty content,
+preserving other component state. Existing `ContentInterface` implementations need no changes.
+Call `clearContent()->content($value)` to replace accumulated content with encoded text.
+
 #### FormControlInterface
 
 Composed interface extending both `RenderableInterface` and `AttributesInterface`. Use this to type form control
