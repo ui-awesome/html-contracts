@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - chore: remove obsolete scaffold tooling and align package maintenance checks with PHP Forge conventions.
 - docs: clarify attribute merging, opening markup returned by `begin()`, and implementation-specific whitespace.
 - feat: add optional `ClearableContentInterface` for immutable content clearing without changing existing content contracts.
+- docs: add a portable HTML Contracts skill with native discovery, prompts, guides and clean distribution.
 
 ## 0.2.2 September 09, 2026
 

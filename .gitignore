@@ -1,5 +1,6 @@
 # Local AI agent, editor, and GitHub CLI config (if present)
-.claude
+.claude/*
+!.claude/skills/
 .codex
 .config/gh
 

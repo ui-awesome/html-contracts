@@ -12,9 +12,6 @@
     <a href="https://github.com/ui-awesome/html-contracts/actions/workflows/static.yml" target="_blank">
         <img src="https://img.shields.io/github/actions/workflow/status/ui-awesome/html-contracts/static.yml?style=for-the-badge&label=PHPStan&logo=github" alt="PHPStan">
     </a>
-    <a href="https://github.com/ui-awesome/html-contracts/actions/workflows/security.yml" target="_blank">
-        <img src="https://img.shields.io/github/actions/workflow/status/ui-awesome/html-contracts/security.yml?style=for-the-badge&label=Security&logo=github" alt="Security">
-    </a>
 </p>
 
 <p align="center">
@@ -22,13 +19,22 @@
     <em>Provides shared interfaces for rendering, attribute management, and form control typing across HTML packages.</em>
 </p>
 
+## Features
+
+<picture>
+    <source media="(min-width: 768px)" srcset="./docs/svgs/features.svg">
+    <img src="./docs/svgs/features-mobile.svg" alt="Feature Overview" style="width: 100%;">
+</picture>
+
+## Quick start
+
 ### Installation
 
 ```bash
 composer require ui-awesome/html-contracts:^0.2
 ```
 
-### Interfaces
+### Basic usage
 
 #### RenderableInterface
 
@@ -68,7 +74,7 @@ values before HTML encoding; `getContent()` returns accumulated content, and `ht
 normalizes enum values and appends trusted raw HTML without encoding or sanitizing. Backed enums use their value (including integer zero); pure enums use their name.
 
 Existing callers remain compatible. Implementations and overrides retaining the old narrower signature must be
-updated; see the [upgrade guide](UPGRADE.md) for details and coordinated Composer requirements.
+updated; see [signature compatibility](docs/examples.md#signature-compatibility) before upgrading implementations.
 
 #### ClearableContentInterface
 
@@ -96,9 +102,28 @@ function renderField(FormControlInterface $control): string
 
 ## Documentation
 
-For detailed configuration options and advanced usage.
+Practical guides for implementing framework-independent HTML interfaces and verifying their contracts.
 
-- 🧪 [Testing Guide](docs/testing.md)
+- 📚 [Installation guide](docs/installation.md)
+- 💡 [Implementation examples](docs/examples.md)
+- 🧪 [Testing guide](docs/testing.md)
+
+The documentation site imports the [guides](https://yii2-framework.github.io/docs/extensions/html-contracts/) and generates
+an [API reference](https://yii2-framework.github.io/docs/extensions/html-contracts/reference/) from the PHPDoc in `src/`.
+
+## AI assistance
+
+AI agents: read the [documentation index](https://yii2-framework.github.io/docs/llms.txt) and fetch the Markdown version
+of a page by appending `index.md` to its URL. The
+[AI agents guide](https://yii2-framework.github.io/docs/project/ai-agents/) covers skill installation, client setup and
+verification.
+
+- 🤖 [`ui-awesome-html-contracts` skill](docs/agents.md): immutable implementations, encoded versus raw content,
+  and explicit form-control capabilities.
+
+Match the installed contract and implementing package revisions. If hosted documentation does not match or is
+unavailable, use the [repository guides](#documentation), the [skill source](skills/ui-awesome-html-contracts/SKILL.md),
+the source PHPDoc and the [changelog](CHANGELOG.md). This interfaces-only package does not supply a renderer or require Yii.
 
 ## Package information
 
@@ -111,6 +136,15 @@ For detailed configuration options and advanced usage.
 [![PHPStan Level Max](https://img.shields.io/badge/PHPStan-Level%20Max-4F5D95.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ui-awesome/html-contracts/actions/workflows/static.yml)
 [![Quality](https://img.shields.io/github/actions/workflow/status/ui-awesome/html-contracts/quality.yml?style=for-the-badge&label=Quality&logo=github)](https://github.com/ui-awesome/html-contracts/actions/workflows/quality.yml)
 [![StyleCI](https://img.shields.io/badge/StyleCI-Passed-44CC11.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.styleci.io/repos/ui-awesome/html-contracts?branch=main)
+
+## Security
+
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/ui-awesome/html-contracts/badge?style=for-the-badge)](https://scorecard.dev/viewer/?uri=github.com/ui-awesome/html-contracts)
+[![Zizmor](https://img.shields.io/github/actions/workflow/status/ui-awesome/html-contracts/security.yml?style=for-the-badge&label=Zizmor&logo=github)](https://github.com/ui-awesome/html-contracts/actions/workflows/security.yml)
+
+## Built with AI
+
+[![Built with Codex](https://img.shields.io/badge/Built%20with-Codex-10A37F.svg?style=for-the-badge&logo=openaigym&logoColor=white)](https://openai.com/codex)
 
 ## Our social networks
 
