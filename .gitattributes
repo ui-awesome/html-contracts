@@ -24,6 +24,11 @@
 *.ttf  binary
 
 # Exclude files from the archive
+/.idea                          export-ignore
+/.vscode                        export-ignore
+/.coderabbit.yaml               export-ignore
+/code_coverage                  export-ignore
+/composer.lock                  export-ignore
 /.agents                        export-ignore
 /.claude                        export-ignore
 /.codex                         export-ignore

@@ -1,0 +1,25 @@
+<svg viewBox="0 0 640 540" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<title id="title">HTML Contracts feature overview</title>
+<desc id="desc">Framework-independent interfaces, not concrete rendering implementations.</desc>
+<style>text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; } .box-bg { fill: #e6f4ea; stroke: #a7cdb3; stroke-width: 1; } .title { font-weight: 700; font-size: 16px; fill: #1a202c; } .content { font-size: 13px; fill: #4a5568; }</style>
+<g><rect class="box-bg" x="20" y="20" width="600" height="110" rx="6"/>
+<rect x="20" y="20" width="4" height="110" fill="#1f883d"/>
+<text class="title" x="40" y="50">Rendering contracts</text>
+<text class="content" x="40" y="80">RenderableInterface includes string casting</text>
+<text class="content" x="40" y="102">Block, inline and void describe rendering APIs</text></g>
+<g><rect class="box-bg" x="20" y="150" width="600" height="110" rx="6"/>
+<rect x="20" y="150" width="4" height="110" fill="#1f883d"/>
+<text class="title" x="40" y="180">Immutable attributes</text>
+<text class="content" x="40" y="210">Attribute updates return a new instance</text>
+<text class="content" x="40" y="232">Bulk updates preserve unrelated attributes</text></g>
+<g><rect class="box-bg" x="20" y="280" width="600" height="110" rx="6"/>
+<rect x="20" y="280" width="4" height="110" fill="#1f883d"/>
+<text class="title" x="40" y="310">Content capabilities</text>
+<text class="content" x="40" y="340">Encoded content and trusted raw HTML contracts</text>
+<text class="content" x="40" y="362">Optional clearing preserves other component state</text></g>
+<g><rect class="box-bg" x="20" y="410" width="600" height="110" rx="6"/>
+<rect x="20" y="410" width="4" height="110" fill="#1f883d"/>
+<text class="title" x="40" y="440">Form capabilities</text>
+<text class="content" x="40" y="470">Base controls combine rendering and attributes</text>
+<text class="content" x="40" y="492">Value, placeholder and choices are explicit capabilities</text></g>
+</svg>

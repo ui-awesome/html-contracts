@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI Awesome HTML Contracts"
+  short_description: "Implement immutable HTML component contracts"
+  default_prompt: "Use $ui-awesome-html-contracts to implement and verify immutable HTML components with explicit capabilities."
