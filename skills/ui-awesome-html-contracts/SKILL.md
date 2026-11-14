@@ -1,6 +1,6 @@
 ---
 name: ui-awesome-html-contracts
-description: Use when implementing or adapting UI Awesome HTML interfaces for rendering, immutable attributes, element content, or form-control capabilities in PHP.
+description: Use when implementing or adapting UI Awesome HTML interfaces for rendering, immutable attributes, element content, or form-control capabilities in PHP. Not for rendering markup, concrete tags, assets or form frameworks, which belong to implementing packages.
 license: BSD-3-Clause
 metadata:
   guide: https://yii2-framework.github.io/docs/extensions/html-contracts/
@@ -9,8 +9,8 @@ metadata:
 # Implement UI Awesome HTML contracts
 
 Use `UIAwesome\Html\Contracts` for framework-independent interfaces. This package requires PHP 8.3 and supplies
-contracts, not concrete tags, a renderer, asset loading, or a form framework. Do not instantiate interfaces or infer
-implementation behavior from a successful installation.
+contracts, not concrete tags, a renderer, asset loading, or a form framework. Do not infer implementation behavior
+from a successful installation.
 
 ## Resolve the installed contract and implementation
 
@@ -72,6 +72,6 @@ consumer tests to verify return-instance isolation, preservation of unrelated at
 raw content, enum zero, and optional-capability rejection as relevant. Test concrete begin/end behavior in its owning
 package; this contracts-only package cannot demonstrate rendered markup or browser behavior by itself.
 
-Distinguish signature checks from semantic compliance, supplied instructions from native skill activation, and focused
-examples from a full test suite. Report unavailable dependencies or untested PHP versions without installing tools or
-changing unrelated package constraints merely to make an example pass.
+Distinguish signature checks from semantic compliance, and focused examples from a full test suite. Report unavailable
+dependencies or untested PHP versions without installing tools or changing unrelated package constraints merely to make
+an example pass.
