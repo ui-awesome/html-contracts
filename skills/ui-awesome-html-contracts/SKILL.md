@@ -1,6 +1,6 @@
 ---
 name: ui-awesome-html-contracts
-description: Use when implementing or adapting UI Awesome HTML interfaces for rendering, immutable attributes, element content, or form-control capabilities in PHP. Not for rendering markup, concrete tags, assets or form frameworks, which belong to implementing packages.
+description: Use when implementing or adapting UI Awesome HTML interfaces for rendering, immutable attributes, element content, or form-control capabilities in PHP. This package supplies contracts only; concrete tags, assets and form frameworks belong to implementing packages.
 license: BSD-3-Clause
 metadata:
   guide: https://yii2-framework.github.io/docs/extensions/html-contracts/
