@@ -112,17 +112,15 @@ Practical guides for implementing framework-independent HTML interfaces and veri
 
 AI agents: read the [documentation index](https://yii2-framework.github.io/docs/llms.txt) and fetch the Markdown version
 of a page by appending `index.md` to its URL. The
-[AI agents guide](https://yii2-framework.github.io/docs/project/ai-agents/) covers skill installation, client setup and
-verification.
+[AI agents guide](https://github.com/yii2-framework/docs/blob/main/src/content/docs/project/ai-agents.md) covers skill
+installation, client setup and verification.
 
 - 🤖 [`ui-awesome-html-contracts` skill](https://github.com/ui-awesome/html-contracts/blob/main/docs/agents.md):
   immutable implementations, encoded versus raw content,
   and explicit form-control capabilities.
 
-Match the installed contract and implementing package revisions. If hosted documentation does not match or is
-unavailable, use the [repository guides](#documentation) at the matching revision,
-the [skill source](skills/ui-awesome-html-contracts/SKILL.md),
-the source PHPDoc and the [changelog](CHANGELOG.md). This interfaces-only package does not supply a renderer or require Yii.
+See the [repository guides](#documentation), the [skill source](skills/ui-awesome-html-contracts/SKILL.md), the source PHPDoc and
+the [changelog](CHANGELOG.md). This interfaces-only package does not supply a renderer or require Yii.
 
 ## Package information
 
