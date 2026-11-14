@@ -22,8 +22,8 @@
 ## Features
 
 <picture>
-    <source media="(min-width: 768px)" srcset="./docs/svgs/features.svg">
-    <img src="./docs/svgs/features-mobile.svg" alt="Feature Overview" style="width: 100%;">
+    <source media="(min-width: 768px)" srcset="https://raw.githubusercontent.com/ui-awesome/html-contracts/main/docs/svgs/features.svg">
+    <img src="https://raw.githubusercontent.com/ui-awesome/html-contracts/main/docs/svgs/features-mobile.svg" alt="Feature Overview" style="width: 100%;">
 </picture>
 
 ## Quick start
@@ -74,7 +74,7 @@ values before HTML encoding; `getContent()` returns accumulated content, and `ht
 normalizes enum values and appends trusted raw HTML without encoding or sanitizing. Backed enums use their value (including integer zero); pure enums use their name.
 
 Existing callers remain compatible. Implementations and overrides retaining the old narrower signature must be
-updated; see [signature compatibility](docs/examples.md#signature-compatibility) before upgrading implementations.
+updated; see [signature compatibility](https://github.com/ui-awesome/html-contracts/blob/main/docs/examples.md#signature-compatibility) before upgrading implementations.
 
 #### ClearableContentInterface
 
@@ -104,26 +104,23 @@ function renderField(FormControlInterface $control): string
 
 Practical guides for implementing framework-independent HTML interfaces and verifying their contracts.
 
-- 📚 [Installation guide](docs/installation.md)
-- 💡 [Implementation examples](docs/examples.md)
-- 🧪 [Testing guide](docs/testing.md)
-
-The documentation site imports the [guides](https://yii2-framework.github.io/docs/extensions/html-contracts/) and generates
-an [API reference](https://yii2-framework.github.io/docs/extensions/html-contracts/reference/) from the PHPDoc in `src/`.
+- 📚 [Installation guide](https://github.com/ui-awesome/html-contracts/blob/main/docs/installation.md)
+- 💡 [Implementation examples](https://github.com/ui-awesome/html-contracts/blob/main/docs/examples.md)
+- 🧪 [Testing guide](https://github.com/ui-awesome/html-contracts/blob/main/docs/testing.md)
 
 ## AI assistance
 
 AI agents: read the [documentation index](https://yii2-framework.github.io/docs/llms.txt) and fetch the Markdown version
 of a page by appending `index.md` to its URL. The
-[AI agents guide](https://yii2-framework.github.io/docs/project/ai-agents/) covers skill installation, client setup and
-verification.
+[AI agents guide](https://github.com/yii2-framework/docs/blob/main/src/content/docs/project/ai-agents.md) covers skill
+installation, client setup and verification.
 
-- 🤖 [`ui-awesome-html-contracts` skill](docs/agents.md): immutable implementations, encoded versus raw content,
+- 🤖 [`ui-awesome-html-contracts` skill](https://github.com/ui-awesome/html-contracts/blob/main/docs/agents.md):
+  immutable implementations, encoded versus raw content,
   and explicit form-control capabilities.
 
-Match the installed contract and implementing package revisions. If hosted documentation does not match or is
-unavailable, use the [repository guides](#documentation), the [skill source](skills/ui-awesome-html-contracts/SKILL.md),
-the source PHPDoc and the [changelog](CHANGELOG.md). This interfaces-only package does not supply a renderer or require Yii.
+See the [repository guides](#documentation), the [skill source](skills/ui-awesome-html-contracts/SKILL.md), the source PHPDoc and
+the [changelog](CHANGELOG.md). This interfaces-only package does not supply a renderer or require Yii.
 
 ## Package information
 

@@ -24,26 +24,26 @@
 *.ttf  binary
 
 # Exclude files from the archive
-/.idea                          export-ignore
-/.vscode                        export-ignore
-/.coderabbit.yaml               export-ignore
-/code_coverage                  export-ignore
-/composer.lock                  export-ignore
 /.agents                        export-ignore
 /.claude                        export-ignore
+/.coderabbit.yaml               export-ignore
 /.codex                         export-ignore
-/AGENTS.md                      export-ignore
-/internal                       export-ignore
 /.editorconfig                  export-ignore
 /.gitattributes                 export-ignore
 /.github                        export-ignore
 /.gitignore                     export-ignore
+/.idea                          export-ignore
 /.styleci.yml                   export-ignore
+/.vscode                        export-ignore
+/AGENTS.md                      export-ignore
+/code_coverage                  export-ignore
 /codeception.yml                export-ignore
 /composer-require-checker.json  export-ignore
+/composer.lock                  export-ignore
 /docs                           export-ignore
 /ecs.php                        export-ignore
 /infection.json*                export-ignore
+/internal                       export-ignore
 /phpstan*.neon*                 export-ignore
 /phpunit.xml.dist               export-ignore
 /rector.php                     export-ignore
