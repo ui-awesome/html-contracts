@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 0.2.5 Under development
 
+- chore: update `.gitattributes` and `.gitignore` for improved file handling and exclusions.
+
 ## 0.2.4 November 15, 2026
 
 - docs: update StyleCI badge in `README.md`.
